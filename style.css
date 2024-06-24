@@ -11,34 +11,42 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: repeat(3,100px);
-    grid-template-areas:
-    "header header header"
-    "main   main   sidebar"
-    "footer footer footer" ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    gap: 24px;
+
+    row-gap: 50px;
+    column-gap: 10px;
+
     width: 500px;
     height: 500px;
     margin: 0 auto;
+    padding: 24px;
     background-color: blue;
 }
 
 .header{
-    grid-area: header;
-    background-color: aqua;
+    background-color: brown;
+    color: white;
 }
 
 .main{
-    grid-area: main;
-    background-color:darkkhaki;
+    background-color: aqua;
+    color: black;
 }
 
 .sidebar{
-    grid-area: sidebar;
     background-color: red;
+    color: white;
 }
 
 .footer{
-    grid-area: footer;
-    background-color: blanchedalmond;
+    background-color: forestgreen;
+    color: white;
+}
+
+.gap{
+    background-color: orangered;
+    color: white;
 }
